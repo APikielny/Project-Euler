@@ -7,7 +7,7 @@
 
 fiblist=[1,2]
 x=2
-while fiblist[x]<4000000:
+while fiblist[x]<100:
     fiblist.append(fiblist[x-1]+fiblist[x-2])
     x+=1
 sum=0
