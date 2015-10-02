@@ -6,8 +6,10 @@
 #By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
 
 fiblist=[1,2]
-for x in range(2,4000000):
+x=2
+while fiblist[x]<4000000:
     fiblist.append(fiblist[x-1]+fiblist[x-2])
+    x+=1
 sum=0
 for x in fiblist:
     if x%2==0:
